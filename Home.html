@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="index.html" rel="" />
+    <link href="login.html" rel="" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="vh-100 position-relative">
+      <div class="navbar-nav black py-3 shadoww">
+        <div class="nav-item d-flex justify-content-between">
+          <div class="nav1 d-flex ps-3">
+            <img
+              src="imgs/2170153.png"
+              alt="logedUser"
+              class="w-20 ms-4 rounded-circle"
+            />
+            <h3 class="ms-1 ps-3 text-blue align-self-center">Smart Login</h3>
+          </div>
+          <a class="text-decoration-none text-white logedout"
+            ><button
+              class="btn btn-outline-info text-white pe-3 me-3"
+              id="out"
+              onclick="logout()"
+            >
+              Logout
+            </button></a
+          >
+        </div>
+      </div>
+      <div
+        class="py-5 shadoww w-50 text-center position-absolute top-50 start-25 translate-middle-y"
+      >
+        <h1 class="text-white" id="welcome"></h1>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Smart Login System</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="py-5 border-1">
+        <div
+          class="inputs py-5 shadoww d-flex flex-column align-items-center w-75 mx-auto"
+        >
+          <h1 class="text-blue text-center mb-4 pb-3 titillium-web-semibold">
+            Smart Register System
+          </h1>
+          <input
+            id="input1"
+            type="text"
+            class="form-control text-white"
+            placeholder="Enter your name"
+            oninput="validateRegister(this)"
+          />
+
+          <input
+            id="input2"
+            type="email"
+            class="form-control text-white"
+            placeholder="Enter your email"
+            oninput="validateRegister(this)"
+          />
+
+          <input
+            id="input3"
+            type="password"
+            class="form-control text-white"
+            placeholder="Enter Password"
+            oninput="validateRegister(this)"
+          />
+          <h4 class="h6 text-danger pb-3 d-none pop">All inputs required</h4>
+          <h4 class="h6 text-danger pb-3 d-none exist">email already exists</h4>
+
+          <a class="text-decoration-none w-100 text-center register"
+            ><button
+              class="btn btn-outline-info form-control text-white"
+              id="mybutton"
+              onclick="registerUser()"
+            >
+              Sign Up
+            </button></a
+          >
+          <h5 class="text-white h6">
+            You have an account?
+            <a href="login.html" class="text-white hoveeeer">Signin</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

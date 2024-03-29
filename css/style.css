@@ -1,0 +1,68 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg-darkblue: #24353f;
+  --shadow: #24353f;
+  --shade: rgba(0, 0, 0, 0.493);
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--bg-darkblue);
+}
+
+/* .shade{
+    box-shadow: 0 0 0 0.25rem var(--bg-darkblue);
+} */
+
+::placeholder {
+  color: rgba(187, 182, 182, 0.817) !important;
+  font-size: medium;
+}
+.form-control {
+  margin-bottom: 20px;
+  padding: 6px;
+  padding-left: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(206, 212, 218);
+  width: 75%;
+  color: white;
+  font-size: 18px;
+  outline: 0;
+}
+input .form-control {
+  text-decoration: white;
+}
+.text-blue {
+  color: #17a2b8;
+}
+
+.w-20 {
+  top: -7%;
+  width: 15%;
+}
+
+.titillium-web-semibold {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 42px;
+}
+
+.start-25 {
+  left: 25%;
+}
+.black {
+  background-color: #24353f;
+}
+.shadoww {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.form-control:focus {
+  box-shadow: var(--shadow);
+  border-color: #86b7fe;
+  background-color: transparent;
+}

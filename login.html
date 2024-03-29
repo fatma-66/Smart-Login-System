@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Home.html" rel="" />
+    <link href="index.html" rel="" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container py-4">
+      <div
+        class="inputs py-5 shadoww d-flex flex-column align-items-center mt-4"
+      >
+        <!-- <img src="imgs/add-user.png" alt="loginUser" class="w-20 position-absolute  rounded-circle ">
+               -->
+        <h1 class="text-blue text-center mb-4 pb-3 titillium-web-semibold">
+          Smart Login System
+        </h1>
+
+        <input
+          id="input4"
+          type="email"
+          class="form-control text-white"
+          placeholder="Enter your mail"
+          oninput="validateRegister(this)"
+        />
+
+        <input
+          id="input5"
+          type="password"
+          class="form-control text-white"
+          placeholder="Enter your Password"
+          oninput="validateRegister(this)"
+        />
+
+        <h4 class="h6 text-danger pb-3 d-none logged">
+          incorrect email or password
+        </h4>
+        <h4 class="h6 text-danger pb-3 d-none empty">All fields required</h4>
+
+        <a class="text-decoration-none text-white w-100 text-center logging"
+          ><button
+            class="btn btn-outline-info form-control text-white"
+            onclick="loginUser()"
+          >
+            Log in
+          </button></a
+        >
+        <h5 class="text-white h6">
+          Don't have an account?
+          <a href="index.html" class="text-white hoveeeer">Signup</a>
+        </h5>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
